@@ -1,0 +1,21 @@
+{
+	"name": "Svelte - Com",
+	"short_name": "Svelte Com",
+	"description": "A demo eCommerce app built with svelte-kit",
+	"author": {
+		"name": "Joel Tanko",
+		"email": "jtogofe@outlook.com"
+	},
+	"orientation": "portrait",
+	"display": "standalone",
+	"icons":[
+		{
+			"src": "favicon.png",
+			"type": "image/png",
+			"sizes": "128x128"
+		}	
+	],
+	"start_url": ".",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
