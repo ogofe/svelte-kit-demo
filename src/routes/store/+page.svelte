@@ -4,18 +4,6 @@
 	import ProductCard from '../../components/ProductCard.svelte';
 	
 	let products = useContext(GlobalStore).products;
-
-	function addToCart(id){
-		data.fetch('/api/cart/', {
-			method: 'POST',
-			body: JSON.stringify({
-				quantity: 1,
-				item: id
-			})
-		})
-	}
-
-
 </script>
 
 <div>
