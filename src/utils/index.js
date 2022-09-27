@@ -27,7 +27,7 @@ export function notify(message){
 	}
 
 	showAlert();
-	setTimeout(() => hideAlert(), 2000)
+	setTimeout(() => hideAlert(), 2500)
 }
 
 export function useContext(ctx){
@@ -36,24 +36,9 @@ export function useContext(ctx){
 	return data;
 }
 
-function _changeState(oldValue, newState){
-	oldValue = newState
-	return oldValue
-}
-
-export function useState(initalState) {
-	/*
-		
-	*/
-	let value = initalState;
-	function setter(newState){
-		value = _changeState(value, newState)
-		return [value, setter]
-	}
-	return [value, setter]
-}
-
 export function setContext(ctx, key, value){
+	// use as 
+	// ctx = setContext(ctx, 'user', 'johndoe@gmail.com')
 	ctx.update(() => {
 		return {
 			...ctx,
