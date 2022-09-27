@@ -5,8 +5,7 @@
 	
 	const ctx = useContext(GlobalStore);
 	let 
-	idx, 
-	count, 
+	idx,
 	cart = ctx.cart.reverse(),
 	cartTotal = get_cart_total();
 
@@ -25,10 +24,7 @@
 	}
 
 	function get_cart_total() {
-		count = 0;
-		// if (cart.length > 0){
-		// 	cart.forEach(item => (count += item.quantity))
-		// }
+		return cart.length
 	}
 </script>
 
@@ -38,7 +34,7 @@
 		{#if count < 1}
 			is empty
 		{:else}
-			<span class="badge"> {count} </span>
+			<span class="badge"> {cartTotal} </span>
 		{/if}
 	</h2>
 
